@@ -85,3 +85,48 @@ The Karakalpak symbols are used with <kbd>Right Alt</kbd>.
 5. In `Input Sources` settings add **Karakalpak (Cyrillic)**.
 
 That's all!
+
+
+# Qaraqalpaqsha(latin) standart klaviatura raskladkası
+
+Anglichan(us) standart klaviatura raskladkasına tiykarlanıp jaratılǵan.
+Qaraqalpaqsha simvollar <kbd>Right Alt</kbd> klavishi járdeminde teriledi.
+
+### Tómendegi simvollar qosılǵan:
+
+| Simvol | Klavish kombinatsiyasi |
+|--------|----------|
+| **ú**  | <kbd>Right Alt</kbd> + <kbd>u</kbd> |
+| **ń**  | <kbd>Right Alt</kbd> + <kbd>n</kbd> |
+| **ǵ**  | <kbd>Right Alt</kbd> + <kbd>g</kbd> |
+| **á**  | <kbd>Right Alt</kbd> + <kbd>a</kbd> |
+| **ó**  | <kbd>Right Alt</kbd> + <kbd>o</kbd> |
+| **ı**  | <kbd>Right Alt</kbd> + <kbd>i</kbd> |
+
+## Ornatıw
+
+1. **Ubuntu** da usı repozitoriyadaǵı `kaa-latin` faylın `/usr/share/X11/xkb/symbols/` papkasına `kaa` atı menen kóshiriń.
+2. `/usr/share/X11/xkb/rules/evdev.xml` faylın ózgertiw ushin ashıń (ózińiz qálegen tekst editori arqali `sudo` menen ashiń).
+    - Faylda `<layoutList>` bóliminiń aqırına barıń (bunıń ushın `</layoutList>` dı izlep tabıń).
+    - Aqırǵı `</layout>` teginen keyin tómendegini qosıń:
+```xml
+<layout>
+  <configItem>
+    <name>kaa</name>
+    <shortDescription>kaa</shortDescription>
+    <description>Karakalpak (latin)</description>
+    <languageList>
+      <iso639Id>kaa</iso639Id>
+    </languageList>
+  </configItem>
+  <variantList/>
+</layout>
+```
+3. `/usr/share/X11/xkb/rules/evdev.xml` faylın saqlań.
+4. Ubuntu-dı óshirip-jaǵıń.
+5. Ubuntu-dıń sazlamalarinda `Input Sources` degen jerde **Karakalpak (latin)** ti qosıń.
+
+Áwmet!
+
+Ubuntudan basqa islewi test qilinǵan GNU/Linux distributivalari:
+Fedora 39, Arch
