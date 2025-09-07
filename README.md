@@ -18,7 +18,7 @@
 
 ## Орнатыў
 
-1. **Ubuntu** да усы репозиториядағы `kaa` файлын `/usr/share/X11/xkb/symbols/` папкасына көшириң.
+1. **Ubuntu** да усы репозиториядағы `kaa` файлын `/usr/share/X11/xkb/symbols/` папкасына көшириң. Файлды репозиториядан жүклеп алғанда файл кеңейтпесин алып таслаң. Яғный `kaa.txt` емес `kaa` форматында киритиң.
 2. `/usr/share/X11/xkb/rules/evdev.xml` файлын өзгертиў ушын ашың.
     - Файлда `<layoutList>` секциясының ақырына барың (буның ушын `</layoutList>` ды излеп табың).
     - Ақырғы `</layout>` тэгинен кейин төмендегини қосың:
@@ -105,7 +105,7 @@ Qaraqalpaqsha simvollar <kbd>Right Alt</kbd> klavishi járdeminde teriledi.
 
 ## Ornatıw
 
-1. **Ubuntu** da usı repozitoriyadaǵı `kaa-latin` faylın `/usr/share/X11/xkb/symbols/` papkasına `kaa` atı menen kóshiriń.
+1. **Ubuntu** da usı repozitoriyadaǵı `kaa-latin` faylın `/usr/share/X11/xkb/symbols/` papkasına `kaa` atı menen kóshiriń. Fayldı repozitoriyadan júklep alǵanda fayl keńeytpesin alıp taslań. Yaǵnıy ’kaa.txt’ emes ’kaa’ formatında kiritiń.
 2. `/usr/share/X11/xkb/rules/evdev.xml` faylın ózgertiw ushin ashıń (ózińiz qálegen tekst editori arqali `sudo` menen ashiń).
     - Faylda `<layoutList>` bóliminiń aqırına barıń (bunıń ushın `</layoutList>` dı izlep tabıń).
     - Aqırǵı `</layout>` teginen keyin tómendegini qosıń:
